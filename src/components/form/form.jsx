@@ -40,7 +40,7 @@ const FormUser = () => {
 
     return (
         <div className="container">
-            <img className="logo" src="../../public/images/github-logo.svg" alt="Logo do GitHub" />
+            <img className="logo" src="/images/github-logo.svg" alt="Logo do GitHub" />
             <form className="form" onSubmit={handleSubmit(onSubmitForm)}>
                 <label className="label" htmlFor="username">Usuário no GitHub (*): 
                     <input
@@ -68,9 +68,9 @@ const FormUser = () => {
                     <section className="user-infos">
                         <h2 className="username">{userData.name ? userData.name : "Sem nome"}</h2>
                         <p className="bio">
-                            <img className="quotes left" src="../../public/images/quotation-marks.png" alt="Aspas iniciais" />
+                            <img className="quotes left" src="/images/quotation-marks.png" alt="Aspas iniciais" />
                             {userData.bio ? userData.bio : "Sem bio"}
-                            <img className="quotes right" src="../../public/images/quotation-marks.png" alt="Aspas finais" />
+                            <img className="quotes right" src="/images/quotation-marks.png" alt="Aspas finais" />
                         </p>
                         <p className="followers">👥 Seguidores: {userData.followers}</p>
                         <p className="following">📌 Seguindo: {userData.following}</p>
